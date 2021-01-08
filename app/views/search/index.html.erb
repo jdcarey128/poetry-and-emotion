@@ -1,10 +1,11 @@
 <section class='poems'>
+<h1>Poem Results</h1>
 
   <% @poems.each do |poem|%>
     <div class='poem'>
-      <p>Title: <%= poem.title %></p>
-      <p>Author: <%= poem.author %></p>
-      <p>Tones: <%= poem.tones.join(', ') %></p>
+      <p><b>Title:</b> <%= poem.title %></p>
+      <p><b>Author:</b> <%= poem.author %></p>
+      <p><b>Tones:</b> <%= poem.tones.join(', ') %></p>
       <% poem.lines.each do |line|%>
         <p><%= line %></p>
       <% end %>
